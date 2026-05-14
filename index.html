@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title> Unit Converter</title>
+
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- Background circles -->
+  <div class="bg-circle one"></div>
+  <div class="bg-circle two"></div>
+
+  <div class="container">
+
+    <div class="top">
+
+      <h1> Unit Converter</h1>
+
+      
+
+    </div>
+
+    <!-- LENGTH CONVERTER -->
+
+    <div class="box">
+
+      <div class="title-row">
+        <h2> Length Converter</h2>
+      </div>
+
+      <input
+        type="number"
+        id="lengthInput"
+        placeholder="Enter value"
+      >
+
+      <div class="row">
+
+        <select id="fromLength">
+          <option value="meter">Meter</option>
+          <option value="centimeter">Centimeter</option>
+          <option value="kilometer">Kilometer</option>
+        </select>
+
+        <div class="arrow">
+          ⇄
+        </div>
+
+        <select id="toLength">
+          <option value="meter">Meter</option>
+          <option value="centimeter">Centimeter</option>
+          <option value="kilometer">Kilometer</option>
+        </select>
+
+      </div>
+
+      <button onclick="convertLength()">
+        Convert Length
+      </button>
+
+      <div class="result-box">
+        <p id="lengthResult">
+          
+        </p>
+      </div>
+
+    </div>
+    <br>
+
+   <hr style=" border: solid 5px rgba(30,64,175,0.18) ;">
+    <!-- WEIGHT CONVERTER -->
+
+    <div class="box">
+
+      <div class="title-row">
+        <h2> Weight Converter</h2>
+      </div>
+
+      <input
+        type="number"
+        id="weightInput"
+        placeholder="Enter value"
+      >
+
+      <div class="row">
+
+        <select id="fromWeight">
+          <option value="kg">Kilogram</option>
+          <option value="g">Gram</option>
+          <option value="mg">Milligram</option>
+        </select>
+
+        <div class="arrow">
+          ⇄
+        </div>
+
+        <select id="toWeight">
+          <option value="kg">Kilogram</option>
+          <option value="g">Gram</option>
+          <option value="mg">Milligram</option>
+        </select>
+
+      </div>
+
+      <button onclick="convertWeight()">
+        Convert Weight
+      </button>
+
+      <div class="result-box">
+        <p id="weightResult">
+          
+        </p>
+      </div>
+
+    </div>
+
+    <footer>
+     &copy; copy right alright reserved by <br> <span> Michael Tesfaw</span>
+    </footer>
+
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
